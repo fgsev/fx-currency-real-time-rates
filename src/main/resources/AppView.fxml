@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.FxApp.Controllers.Controller">
+    <children>
+        <VBox layoutX="362.0" layoutY="157.0" prefHeight="175.0" prefWidth="182.0">
+            <children>
+                <VBox prefHeight="90.0" prefWidth="600.0" />
+                <TextArea fx:id="currentCurrencies" editable="false" prefHeight="298.0" prefWidth="182.0" />
+            </children>
+        </VBox>
+        <VBox layoutX="75.0" layoutY="116.0" prefHeight="48.0" prefWidth="95.0">
+            <children>
+                <ComboBox fx:id="ComboBoxCurrencyFirst" onAction="#toggleCurrencyIfEqual" prefHeight="25.0" prefWidth="155.0" promptText="currency">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </ComboBox>
+            </children>
+        </VBox>
+        <VBox layoutX="31.0" layoutY="132.0" prefHeight="48.0" prefWidth="42.0">
+            <children>
+                <Label prefHeight="24.0" prefWidth="45.0" text="From:" />
+            </children>
+        </VBox>
+        <VBox layoutX="180.0" layoutY="131.0" prefHeight="25.0" prefWidth="149.0">
+            <children>
+                <TextField fx:id="amountField" onAction="#handleConversion" prefHeight="25.0" prefWidth="140.0" promptText="Enter the amount:" />
+            </children>
+        </VBox>
+        <VBox layoutX="75.0" layoutY="180.0" prefHeight="48.0" prefWidth="95.0">
+            <children>
+                <ComboBox fx:id="ComboBoxCurrencySecond" onAction="#toggleCurrencyIfEqual" prefHeight="25.0" prefWidth="102.0" promptText="currency">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </ComboBox>
+            </children>
+        </VBox>
+        <VBox layoutX="31.0" layoutY="196.0" prefHeight="48.0" prefWidth="42.0">
+            <children>
+                <Label prefHeight="24.0" prefWidth="45.0" text="To:" />
+            </children>
+        </VBox>
+        <VBox layoutX="180.0" layoutY="195.0" prefHeight="25.0" prefWidth="149.0">
+            <children>
+                <TextField fx:id="calculatedField" editable="false" prefHeight="25.0" prefWidth="140.0" promptText="Converted currency:" />
+            </children>
+        </VBox>
+        <VBox layoutX="362.0" layoutY="124.0" prefHeight="35.0" prefWidth="182.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#displayCurrencyFromAPI" prefHeight="35.0" prefWidth="184.0" text="Get current exchange rates" />
+            </children>
+        </VBox>
+        <VBox prefHeight="100.0" prefWidth="600.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="63.0" prefWidth="602.0" text="Real-time rates and exchange">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Button layoutX="120.0" layoutY="245.0" mnemonicParsing="false" onAction="#handleConversion" prefHeight="25.0" prefWidth="121.0" text="Convert" />
+    </children>
+</AnchorPane>
