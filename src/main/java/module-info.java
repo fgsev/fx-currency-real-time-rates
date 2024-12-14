@@ -11,6 +11,6 @@ module com.fxcurrency.fxcurrencyrealtimerates {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.fxcurrency.fxcurrencyrealtimerates to javafx.fxml;
-    exports com.fxcurrency.fxcurrencyrealtimerates;
+    opens com.fxcurrency to javafx.fxml;
+    exports com.fxcurrency;
 }

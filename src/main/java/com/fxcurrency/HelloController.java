@@ -1,4 +1,4 @@
-package com.fxcurrency.fxcurrencyrealtimerates;
+package com.fxcurrency;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
