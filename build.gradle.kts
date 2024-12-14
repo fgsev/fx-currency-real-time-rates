@@ -38,6 +38,7 @@ dependencies {
     implementation("org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0")
     implementation("eu.hansolo:tilesfx:21.0.3")
     implementation("com.github.almasb:fxgl:17.3")
+    implementation("com.github.tomakehurst:wiremock:3.0.+")
 
 
 
