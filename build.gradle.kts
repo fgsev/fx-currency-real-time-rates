@@ -23,8 +23,24 @@ repositories {
 }
 
 dependencies {
+    implementation(group = "org.openjfx", name = "javafx-base", version = "23", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-graphics", version = "23", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-controls", version = "23", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-fxml", version = "23", classifier = platform)
+    implementation(group = "org.openjfx", name = "javafx-web", version = "23", classifier = platform)
+    implementation("org.controlsfx:controlsfx:11.1.1")
+    implementation("org.kordamp.ikonli:ikonli-javafx:12.3.1")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("com.dlsc.formsfx:formsfx-core:11.6.0")
+    implementation("net.synedra:validatorfx:0.5.0")
+    implementation("org.kordamp.ikonli:ikonli-javafx:12.3.1")
+    implementation("org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0")
+    implementation("eu.hansolo:tilesfx:21.0.3")
+    implementation("com.github.almasb:fxgl:17.3")
+
+
+
 }
 
 java {
