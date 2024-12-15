@@ -3,6 +3,7 @@ import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform.getCurr
 plugins {
     application
     id("pl.allegro.tech.build.axion-release").version("1.13.6")
+    kotlin("jvm") version "2.0.20"
 }
 
 project.version = scmVersion.version
@@ -39,7 +40,8 @@ dependencies {
     implementation("eu.hansolo:tilesfx:21.0.3")
     implementation("com.github.almasb:fxgl:17.3")
     implementation("com.github.tomakehurst:wiremock:3.0.+")
-
+    implementation(kotlin("stdlib-jdk8"))
+    implementation ("org.json:json:20210307")
 
 
 }

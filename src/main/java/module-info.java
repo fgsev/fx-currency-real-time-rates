@@ -10,6 +10,8 @@ module com.fxcurrency.fxcurrencyrealtimerates {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires kotlin.stdlib;
+    requires org.json;
 
     opens com.fxcurrency to javafx.fxml;
     exports com.fxcurrency;
